@@ -36,14 +36,15 @@
              <ul><li v-for="detail in details">{{ detail}}</li>
             </ul>
            
-            <div v-for="variant in variants" :key="variant.id" @mouseover="updateImage(variant.image)"> {{ variant.color }} </div>
+            <div v-for="variant in variants" :key="variant.id" @mouseover="updateImage(variant.image)" class="color-circle"
+             :style="{ backgroundColor: variant.color }"></div>
             
             <ul>
             <li v-for="size in sizes"> {{ size }} </li> 
             </ul>
 
-           <button class="button" @click="addToCart"> Add to Cart </button>
-           <button class="button" @click="removeFromCart"> Remove Item </button>
+           <button class="button" :class="{ disabledButton: !inStock}" :disabled="!inStock" @click="addToCart"> Add to Cart </button>
+           <button class="button" :class="{ disabledButton: !inStock}" :disabled="!inStock" @click="removeFromCart"> Remove Item </button>
 
 
              <p>Visit <a :href="url">VueMastery.com</a> for more</p>

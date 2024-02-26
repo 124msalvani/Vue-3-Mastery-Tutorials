@@ -6,7 +6,8 @@ const app = Vue.createApp({
             description: "Fluffy warm socks!",
             image: './assets/images/socks_green.jpg',
             url: "https://www.vuemastery.com",
-            inventory: 100,
+           // inventory: 100,
+            inStock: true,
             onSale: false,
             details: ["50 cotton", "30% wool", "20% polyester"],
             variants:[
@@ -30,6 +31,6 @@ const app = Vue.createApp({
                 this.cart = 0;
             }
            
-        }
+        },
     }
 })
