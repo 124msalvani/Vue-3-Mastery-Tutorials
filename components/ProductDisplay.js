@@ -24,8 +24,7 @@ app.component("product-display", {
          <p v-show="onSale"> {{title}} is on sale!</p>
 
          <p>Shipping: {{shipping}} </p>
-         <ul><li v-for="productdetail in productdetails">{{ productdetail }}</li>
-
+         <!-- Details Prop Here -->
 
 
          <p>{{ description }}</p>

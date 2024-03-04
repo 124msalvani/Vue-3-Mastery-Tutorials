@@ -3,7 +3,6 @@ const app = Vue.createApp({
         return{
             cart:[],
             premium: true,
-            productdetails: ["30% cotton", "60% wool", "20% polyester"],
         }
     },
     methods:{
@@ -13,9 +12,7 @@ const app = Vue.createApp({
         removeCart(id){
             if (this.cart.length === 0){
                 this.cart.length === 0;
-                
             }
-           
              else{
                 this.cart.pop(id);   
                 
