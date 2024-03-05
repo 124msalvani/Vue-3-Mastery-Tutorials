@@ -52,6 +52,8 @@ app.component('review-form',{
       review: ''
       rating: null
       reccomend: null
+       document,getElementsByClassName("review-form")[0].reset;
+
     
 
     }
